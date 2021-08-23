@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tarkant/greasemonkey-webpack-typescript-boilerplate.git"
+    "url": "git+https://github.com/davidryda/Neopets_Food_Club_Helper.git"
   },
   "keywords": [],
   "author": "David",
   "license": "GPL-3.0-or-later",
-  "homepage": "https://github.com/tarkant/greasemonkey-webpack-typescript-boilerplate#readme",
+  "homepage": "https://github.com/davidryda/Neopets_Food_Club_Helper",
   "devDependencies": {
     "@types/node": "^14.14.35",
     "concat-files": "^0.1.1",
