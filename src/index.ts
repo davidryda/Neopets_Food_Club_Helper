@@ -249,7 +249,7 @@ export class App {
 
                     //initialize date object
                     const dateTimeFormatOptions: Intl.DateTimeFormatOptions = {
-                        year: 'numeric', month: 'long', day: 'numeric'
+                        year: 'numeric', month: 'long', day: '2-digit'
                     }
                     const date = new Date();
                     const currentMonth = date.getMonth(); //current month. this is 0 based. 0 = January
@@ -264,8 +264,9 @@ export class App {
                         .toLocaleString(undefined, dateTimeFormatOptions)
                         .toLowerCase();
                     const valuesToLookFor = [ currentDay, currentYear, currentMonthName ];
-                    const formattedDatesToLookFor = [ currentDateFormatted, nextDateFormatted ];
                     
+                    const formattedDatesToLookFor = [ currentDateFormatted, nextDateFormatted ];
+                    console.log(formattedDatesToLookFor);
                     if (!formattedDatesToLookFor.find(x => title.includes(x))) continue;
 
                     mostRecentFoodClubBetsUrl = url;
